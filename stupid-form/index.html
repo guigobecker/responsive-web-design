@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- title and description -->
+    <header>
+      <h1 id="title">Stupid Survey Form</h1>
+      <p id="description">A bunch of useless questions to waste your time.</p>
+    </header>
+    <!-- form -->
+    <form action="" id="survey-form">
+        <!-- name -->
+        <label for="name" id="name-label"
+          >Name
+          <input type="text" id="name" required placeholder="Enter your name" />
+        </label>
+
+      <!-- email -->
+      <label for="email" id="email-label"
+        >Email
+        <input
+          type="email"
+          id="email"
+          required
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+          title="Please enter a valid email address"
+          placeholder="Enter your email"
+        />
+      </label>
+
+      <!-- number -->
+      <label id="number-label" for="number"
+        >Favorite Number
+        <input
+          type="number"
+          id="number"
+          min="0"
+          max="100"
+          placeholder="Enter your favorite number"
+        />
+      </label>
+
+      <!-- dropdown menu -->
+      <h2>What is your favorite animal?</h2>
+
+      <select name="favorite-animal" id="dropdown">
+        <option disabled="" selected="" value="">Select animal</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+
+      <!-- radio buttons -->
+      <h2>What is your favorite team?</h2>
+
+      <input type="radio" id="inter" name="team" value="inter" />
+      <label for="inter">Inter</label><br />
+
+      <input type="radio" id="gremio" name="team" value="gremio" />
+      <label for="gremio">Grêmio</label><br />
+
+      <!-- checkboxes -->
+      <h2>Which foods do you like to eat?</h2>
+
+      <input type="checkbox" id="ice-cream" name="food" value="ice-cream" />
+      <label for="ice-cream">Ice Cream</label><br />
+
+      <input type="checkbox" id="pizza" name="food" value="pizza" />
+      <label for="pizza">Pizza</label><br />
+
+      <input type="checkbox" id="broccoli" name="food" value="broccoli" />
+      <label for="broccoli">Broccoli</label><br />
+
+      <input type="checkbox" id="chocolate" name="food" value="chocolate" />
+      <label for="chocolate">Chocolate</label><br />
+
+      <!-- textarea comment -->
+
+      <label for="comment">Leave a commment down below:</label>
+      <textarea name="user-comment" id="comment" cols="50" rows="4"></textarea
+      ><br />
+
+      <!-- submit button -->
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
